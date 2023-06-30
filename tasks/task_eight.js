@@ -1,13 +1,13 @@
-function outer () {
+function outerFunction() {
   const outerScope = 'Outer function'
 
-  function inner () {
+  function innerFunction () {
     const innerScope = `I am the function in the ${outerScope}`
     console.log(innerScope)
   }
 
-  return inner()
+  return innerFunction()
 }
 
-const outFunction = outer()
+const outFunction = outerFunction()
 console.log(outFunction)
